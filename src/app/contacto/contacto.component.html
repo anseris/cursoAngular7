@@ -5,3 +5,11 @@
   Parametro de la URL:{{parametro}}
 </div>
 
+<div *ngIf="!parametro">
+  <button (click)="redirigir()">Ir a la pagina con Parametro</button>
+</div>
+
+<div *ngIf="!parametro">
+  <button (click)="redirigir2()">Ir a la Home</button>
+</div>
+

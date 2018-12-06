@@ -22,4 +22,11 @@ export class ContactoComponent implements OnInit {
     })
   }
 
+  redirigir(){
+    this._router.navigate(['/contacto', 'google.es'])
+  }
+
+  redirigir2(){
+    this._router.navigate(['/home'])
+  }
 }
