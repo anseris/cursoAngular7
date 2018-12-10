@@ -11,6 +11,7 @@ import { PeticionesService } from '../services/peticiones.service';
 export class CochesComponent implements OnInit {
   public coche: Coche;
   public coches:Array<Coche>;
+  public posts;
 
   constructor(
     private _peticionesService:PeticionesService
@@ -31,6 +32,7 @@ export class CochesComponent implements OnInit {
     this._peticionesService.getArticulos().subscribe(
       result=>{
         console.log(result)
+        this.posts= result;
       },
       error=>{
         var erroMesage= <any>error;

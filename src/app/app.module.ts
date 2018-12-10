@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { FrutaComponent } from './fruta/fruta.component';
 import { EmpleadoComponent } from './empleado/empleado.component';
@@ -14,6 +15,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { ConversorPipe } from './pipes/conversor.pipe';
 import { CochesComponent } from './coches/coches.component';
 
+import {PeticionesService} from './services/peticiones.service'
 
 @NgModule({
   declarations: [
@@ -32,7 +34,7 @@ import { CochesComponent } from './coches/coches.component';
     routing,
     HttpClientModule
   ],
-  providers: [appRoutingProviders],
+  providers: [appRoutingProviders, PeticionesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

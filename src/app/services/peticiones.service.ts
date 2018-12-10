@@ -8,7 +8,7 @@ import { map } from "rxjs/operators";
   providedIn: 'root'
 })
 export class PeticionesService {
-  readonly url="https://jsonplaceholder.typicode.com/posts";
+   public url="https://jsonplaceholder.typicode.com/posts";
 
    posts:any;
    constructor(private _http:HttpClient) {
